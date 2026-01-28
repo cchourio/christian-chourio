@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.main {
+    text-align: center;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    background: #ececec;
+    border: 10px solid #1369b9;
+    border-radius: 10px;
+}
+
+.main h1 {
+    color: #434e5e;
+}
+
+nav {
+    background: #1369b9;
+    margin: 20px;
+    padding: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+img {
+    border-radius: 180px;
+}
+
+#about {
+    background: #41a4f5;
+    color: #ffffff;
+    font-weight: 200;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+#about button{
+    border: none;
+    padding: 15px 20px;
+    background: #1369b9;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+#experience {
+    background: #ececec;
+    color: #434e5e;
+    margin: 20px;
+    padding: 15px;
+}
+
+#experience h4{
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+#experience ul li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+#contact {
+    background: #41a4f5;
+    color: #ffffff;
+    font-weight: 200;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+}
+#contact h2 {
+    margin-bottom: 15px;
+}
+
+#contact ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+#contact ul li{
+    list-style: none;   
+}
+#contact ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer {
+    background: #5c5c5c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
