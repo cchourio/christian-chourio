@@ -17,24 +17,31 @@
 <body>
     
     <div class="main">
-        <nav>
-            <a href="#about">About</a> |
-            <a href="#experience">Experience</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#projects">Projects</a> |
+        <nav class="menu">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
             <a href="#connect">Connect</a>
         </nav>
 
-        <h1>Hi, I'm Christian Chourio</h1>
-
-        <img src="https://avatars.githubusercontent.com/u/16125976?v=4" alt="Image Profile" style="width: 200px;">
+        <section class="intro">
+            <section>
+                <img src="https://avatars.githubusercontent.com/u/16125976?v=4" alt="Image Profile">
+            </section>
+            <section>
+                <h1>Hello, I'm Christian Chourio</h1>
+            </section>
+        </section>
 
         <section id="skills">
             <h2>Skills</h2>
+            <ul></ul>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
+            <ul></ul>
         </section>
 
         <section id="about">
@@ -44,8 +51,8 @@
 
         <section id="experience">
             <h2>Experience</h2>
-            <div>
-                <section>
+            <div class="columns-exp">
+                <section class="column-exp">
                     <h4>Frontend</h4>
                     <ul>
                         <li>HTML/CSS/JavaScript</li>
@@ -54,7 +61,7 @@
                     </ul>
                 </section>
                 
-                <section>
+                <section class="column-exp">
                     <h4>Backend</h4>
                     <ul>
                         <li>Node.js</li>
@@ -63,7 +70,7 @@
                     </ul>
                 </section>
 
-                <section>
+                <section class="column-exp">
                     <h4>Tools</h4>
                     <ul>
                         <li>Git</li>
