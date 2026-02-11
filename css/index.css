@@ -65,12 +65,24 @@ html, body {
 }
 /* End Style Intro */
 
+/* Style Skills and Projects */
 #skills {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
     background: #41a4f5;
     color: #ffffff;
     font-weight: 200;
     margin: 0px 0px;
     padding: 50px 0px;
+}
+
+#skills ul li {
+    list-style: none;
+    font-size: 18px;
 }
 
 #projects {
