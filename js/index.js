@@ -72,3 +72,27 @@ messageForm.addEventListener('submit', function(event) {
     messageForm.reset();
 
 });
+
+// Replace 'YOUR_GITHUB_USERNAME' with your actual GitHub username
+const GITHUB_USERNAME = 'cchourio';
+
+fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos`)
+  .then(response => response.json())
+  .then(repositories => {
+    console.log(repositories); // See the data in the console
+
+    // Display repositories in the Projects section
+    const projectSection = document.getElementById('projects');
+    const projectList = projectSection.querySelector('ul');
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement('li');
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching repositories:', error);
+    const projectSection = document.getElementById('projects');
+    projectSection.innerText = 'Unable to load projects. Please try again later.';
+  });  
