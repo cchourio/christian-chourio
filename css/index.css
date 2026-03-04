@@ -91,8 +91,31 @@ html, body {
 #projects {
     background: #ececec;
     color: #434e5e;
-    margin: 0px 0px;
-    padding: 50px 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#projects h2 {
+    margin-bottom: 15px;
+}
+
+#projects ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#projects li {
+  background: #fff;
+  color: #222;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 /* Style About */
