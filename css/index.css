@@ -68,56 +68,6 @@ html, body {
 }
 /* End Style Intro */
 
-/* Style Skills and Projects */
-#skills {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-
-    background: #41a4f5;
-    color: #ffffff;
-    font-weight: 200;
-    margin: 0px 0px;
-    padding: 50px 0px;
-}
-
-#skills ul li {
-    list-style: none;
-    font-size: 18px;
-}
-
-#projects {
-    background: #ececec;
-    color: #434e5e;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#projects h2 {
-    margin-bottom: 15px;
-}
-
-#projects ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#projects li {
-  background: #fff;
-  color: #222;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 16px;
-  font-size: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
 /* Style About */
 #about {
     background: #41a4f5;
@@ -184,6 +134,93 @@ html, body {
     list-style: none;
 }
 /* End Style Experience */
+
+/* Style Skills and Projects */
+#skills {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    background: #41a4f5;
+    color: #ffffff;
+    font-weight: 200;
+    margin: 0px 0px;
+    padding: 50px 0px;
+}
+
+#skills ul li {
+    list-style: none;
+    font-size: 18px;
+}
+
+#projects {
+    background: #ececec;
+    color: #434e5e;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#projects h2 {
+    margin-bottom: 15px;
+}
+
+#projects ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#projects li {
+  background: #fff;
+  color: #222;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Style GitHub Stats */
+#github-stats {
+    background: #1369b9;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#github-stats h2 {
+    margin-bottom: 20px;
+}
+
+#stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: #41a4f5;
+    border-radius: 10px;
+    padding: 20px 30px;
+    min-width: 150px;
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+/* ...existing code... */
 
 /* Style leave-message */
 #leave-message {
