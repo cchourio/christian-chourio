@@ -95,4 +95,29 @@ fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos`)
     console.error('Error fetching repositories:', error);
     const projectSection = document.getElementById('projects');
     projectSection.innerText = 'Unable to load projects. Please try again later.';
-  });  
+  });
+
+  // Second fetch: GitHub User Profile Stats
+fetch(`https://api.github.com/users/${GITHUB_USERNAME}`)
+  .then(response => response.json())
+  .then(user => {
+    console.log('GitHub user data:', user);
+
+    const statsContainer = document.getElementById('stats-container');
+
+    const stats = [
+      { label: 'Public Repos', value: user.public_repos },
+      { label: 'Followers', value: user.followers },
+      { label: 'Following', value: user.following },
+    ];
+
+    stats.forEach(stat => {
+      const card = document.createElement('div');
+      card.classList.add('stat-card');
+      card.innerHTML = `<h3>${stat.value}</h3><p>${stat.label}</p>`;
+      statsContainer.appendChild(card);
+    });
+  })
+  .catch(error => {
+    console.error('Error fetching GitHub profile:', error);
+  });
