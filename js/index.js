@@ -87,7 +87,12 @@ fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos`)
 
     for (let i = 0; i < repositories.length; i++) {
       const project = document.createElement('li');
-      project.innerText = repositories[i].name;
+      const projectLink = document.createElement('a');
+      projectLink.href = repositories[i].html_url;
+      projectLink.target = '_blank';
+      projectLink.rel = 'noopener noreferrer';
+      projectLink.innerText = repositories[i].name;
+      project.appendChild(projectLink);
       projectList.appendChild(project);
     }
   })
